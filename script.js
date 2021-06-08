@@ -33,28 +33,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+import Countdown from "..countdown.js"
 
-//function startTimer(duration, display) {
-
-   // var timer = duration, minutes, seconds;
-    //setInterval(function() {
-        //minutes = parseInt(timer / 60, 10);
-        //seconds = parseInt(timer % 60, 10);
-
-        //minutes = minutes <10 ? "0" + minutes : minutes;
-        //seconds = seconds <10 ? "0" + seconds : seconds;
-
-        //display.textContent = minutes + ":" + seconds;
-
-        //if(--timer < 0) {
-            //timer = duration;
-       // }
-   // }, 1000);
-//}
-
-//window.onload = function() {
-   // var duration = 60 * 4; //conversão para segundos
-   // var display = document.querySelector("#timer");// elemento para exibir o startTimer
-
-    //startTimer(duration, display);
-//}
+const tempoParaOWWB = new Countdown("18 December 2021 15:00:00 GMT-0300");
+console.log(tempoParaOWWB)
