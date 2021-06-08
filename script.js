@@ -32,8 +32,3 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-
-import Countdown from "..countdown.js"
-
-const tempoParaOWWB = new Countdown("18 December 2021 15:00:00 GMT-0300");
-console.log(tempoParaOWWB)
