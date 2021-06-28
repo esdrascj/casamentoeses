@@ -226,7 +226,7 @@ header {
 
   .sessao-header h1 {
     font-family: var(--font-primary);
-    font-size: 3rem;
+    
     color: #4b4b4b;
     border-bottom: solid 3px #6a3093;
     margin-bottom: 1.5rem;
@@ -239,7 +239,7 @@ header {
       background-color:#6a3093;
   }
 
-  /*fundo das imagens centrais da seção quem somos*/
+  /*fundo das imagens centrais da seção quem somos
   .card{
       width: 18rem;
       height: 25rem;
@@ -273,9 +273,34 @@ header {
     font-weight: 500;
     color: #eee;
 }
-/*fim da sessão quem somos*/
+fim da sessão quem somos*/
 
-/* Slideshow container */
+/*Inicio da contagem regressiva*/
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    
+  }
+  
+  .countdown li {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    padding: 1rem;
+    color: rgb(0, 238, 99);
+    background: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+ 
+ 
+
+   /*Fim da contagem regressiva*/
+
+/* Inicio do css da galeria de fotos */
 .gallery-container {
     width: 90%;
     position: relative;
@@ -371,123 +396,80 @@ header {
     left: 0;
     border-radius: 3px 0 0 3px;
    }
+   /*FIm da galeria de fotos*/
 
-/* inicio do rodape
-footer{
-    width: 100%;
-    height: 7rem;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/*footer*/
+.container-footer{
+	max-width: 1120px;
+	margin:auto;
+
 }
-
-@media (min-width: 480px) {
-    .footer-content {
-      width: 800px;
-      margin: auto;
-    }
-}
-
-.footer-content{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-content p{
-    font-family: var(--font-secundary);
-    color:#000;
-    font-size:1.2rem;
-}
-
-.social-list a{
-    margin: 0 4rem;
-    color:#4211b4;
-    font-size: 1.7rem;
-}
-
-.social-list ul{
-    display: flex;
-}
-fim do rodape*/
-
-footer{
-    width: 100%;
-    height: 7rem;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-content{
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.social-list{
-    width: 100%;
-    text-align: center;
-}
-
-.redes-sociais img{
-    width: 18%;
-}
-
-.social-list ul li{
-    list-style-type: none;
-    display: inline;
-}
-
-@media only screen and (min-width: 450px) and (max-width: 768px){
-    footer{
-        clear:both;
-        width: 100%;
-    }
-    .footer-content{
-        width: 50%;
-        float:left;
-        text-align: left;
-    }
+.row{
+	display: flex;
+	flex-wrap: wrap;
    
-    .social-list{
-        width:  50%;
-        float: right;
-
-    }
+}
+ul{
+	list-style: auto;
+   
+}
+.footer{
+	background-color: #24262b;
+    padding: 18px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 11px;
+   
 }
 
-/* css para rodape em desktop*/
-@media only screen and (min-width: 769px) {
-    footer{
-        clear:both;
-        width: 100%;
-        margin-bottom: 3%;
-    }
-    .footer-content{
-        font-family: var(--font-secundary);
-        font-size: 1.2em;
-        width: 45%;
-        float:left;
-        text-align: center;
-    }
-  
-    .social-list{
-        width:  50%;
-        text-align: center;
-    }
+.footer-col a::before{
+	content: '';
+	position: center;
+	bottom: -4px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
 
-    .social-list a{
-        margin: 0 4rem;
-        color:#4211b4;
-        font-size: 1.7rem;
+.footer-col ul li a{
+	font-size: 50px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 800;
+	color: #bbbbbb;
+	display: flex;
+	transition: all 0.3s ease;
+    margin-bottom: 35px;
+    position: left;
+}
+.footer-col ul li a:hover{
+	color: #30937a;
+	padding-left: 8px;
 
-    }
-    
-    .social-list ul{
-        display: flex;
-        
-    }
+}
+div.container-footer {
+    height: 10em;
+    position: relative }
+div.container-footer a {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
