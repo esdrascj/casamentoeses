@@ -133,6 +133,9 @@ header {
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
 }
+.banner button a{
+    color: #fff
+}
 
 @keyframes moveBanner {
     0% {
