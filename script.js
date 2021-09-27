@@ -4,6 +4,7 @@ hamburguer.addEventListener('click', function() {
     document.querySelector('.container').classList.toggle('show-menu');
 });
 
+
 //INICIO DA GALERIA DE FOTOS JS
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
